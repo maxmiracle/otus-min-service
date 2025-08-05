@@ -40,17 +40,17 @@ docker tag otus-min-service maxmiracle/otus-min-service:1
 
 Или пересобрать с новым тегом.
 ```shell
-docker build --platform linux/amd64 -t maxmiracle/otus-min-service:1 .
+docker build --platform linux/amd64 -t maxmiracle/otus-min-service:2 .
 ```
 
 Опубликовать
 ```shell
-docker push maxmiracle/otus-min-service:1
+docker push maxmiracle/otus-min-service:2
 ```
 
 Запустить из dockerhub
 ```shell
-docker run --name otus-min-service-01 -d -p 8000:8000 -p 8888:8080 maxmiracle/otus-min-service:1
+docker run --name otus-min-service-01 -d -p 80:8000 maxmiracle/otus-min-service:1
 ```
 
 
